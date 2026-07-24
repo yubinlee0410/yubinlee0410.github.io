@@ -127,6 +127,7 @@ const SITE = {
 function renderSite() {
   const S = SITE;
   const esc = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const brk = (s) => esc(s).replace(/&lt;br\s*\/?&gt;/gi, '<br>'); // <br> 줄바꿈만 허용
   const email = S.email;
   const namePlain = String(S.name || S.nameEn || '').split(' ').join('');
   const fill = (v) => String(v).split('__EMAIL__').join(email);
@@ -208,9 +209,9 @@ function renderSite() {
   set('aboutFacts', S.aboutFacts.map(f => {
     const v = fill(f.v);
     const isEmail = v.indexOf('@') !== -1 && v.indexOf(' ') === -1;
-    const val = isEmail ? '<a class="hover:text-purple break-all" href="mailto:'+esc(v)+'">'+esc(v)+'</a>' : esc(v);
+    const val = isEmail ? '<a class="hover:text-purple break-all" href="mailto:'+esc(v)+'">'+esc(v)+'</a>' : brk(v);
     const keyEn = f.ke ? '<span class="block text-[11px] font-normal text-purple/60">'+esc(f.ke)+'</span>' : '';
-    const valEn = f.en ? '<span class="block mt-0.5 text-[13px] text-ink-soft/80">'+esc(f.en)+'</span>' : '';
+    const valEn = f.en ? '<span class="block mt-0.5 text-[13px] text-ink-soft/80">'+brk(f.en)+'</span>' : '';
     return '<div class="row flex gap-4 py-[11px] text-[14.5px]">'+
         '<span class="w-24 shrink-0 text-purple font-semibold">'+esc(f.k)+keyEn+'</span>'+
         '<span>'+val+valEn+'</span>'+
