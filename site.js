@@ -47,7 +47,8 @@ const SITE = {
   heroRole:  '사람 말초혈액에서 <b class="text-ink font-semibold">면역세포</b>를 분리하고, ' +
              '<b class="text-ink font-semibold">단일세포 RNA 시퀀싱</b>으로 다양한 질환에서 ' +
              '<b class="text-ink font-semibold">호중구(Neutrophil)</b>의 기능이 어떻게 변화하는지 규명하는 ' +
-             '<b class="text-ink font-semibold">면역세포 중심 생리학</b> 연구자입니다.',
+             '<b class="text-ink font-semibold">면역세포 중심 생리학</b> 연구자입니다.' +
+             '<span class="block mt-3 text-[15px] text-ink-soft/70 italic">An immune cell&#8211;focused physiologist. I isolate immune cells from human peripheral blood and use single-cell RNA sequencing to uncover how neutrophil function changes across a range of diseases.</span>',
   heroQuote: '“호중구가 감염과 염증에서<br>어떻게 반응하는지, 세포 하나하나의<br>언어로 읽어냅니다.”',
   heroStats: [
     { num: "__PUBCOUNT__", label: "Publications" },
@@ -58,13 +59,16 @@ const SITE = {
 
   /* ── 소개(About) ── */
   aboutParagraphs: [
-    '<b class="text-ink">면역세포의 생리를 실험으로 읽어냅니다.</b> 저는 사람 말초혈액(peripheral blood)에서 면역세포를 분리하고, FACS Calibur·Western blot·qPCR 등 분자생물학 실험을 기반으로 자연 면역의 최전선인 <b class="text-ink">호중구(Neutrophil)</b>의 기능을 연구합니다.',
-    '최근에는 <b class="text-ink">단일세포 RNA 시퀀싱(single-cell RNA sequencing)</b>을 통해 감염·대사질환·자가면역 등 다양한 질환에서 호중구의 기능이 어떻게 변화하는지를 지속적으로 규명하고 있습니다.',
-    '호중구 세포외 덫(NET) 형성, 호중구 유래 세포외소포(EV), 페롭토시스(ferroptosis)에 이르기까지 — 호중구가 질환마다 보이는 이질적인 반응을 하나의 축으로 꿰는 연구를 지향합니다.',
+    '<b class="text-ink">면역세포의 생리를 실험으로 읽어냅니다.</b> 저는 사람 말초혈액(peripheral blood)에서 면역세포를 분리하고, FACS Calibur·Western blot·qPCR 등 분자생물학 실험을 기반으로 자연 면역의 최전선인 <b class="text-ink">호중구(Neutrophil)</b>의 기능을 연구합니다.' +
+      '<span class="block mt-2 text-[14.5px] text-ink-soft/70 italic">I read the physiology of immune cells through experiments. I isolate immune cells from human peripheral blood and study the function of neutrophils&#8212;the front line of innate immunity&#8212;using molecular techniques such as FACS Calibur, Western blot, and qPCR.</span>',
+    '최근에는 <b class="text-ink">단일세포 RNA 시퀀싱(single-cell RNA sequencing)</b>을 통해 감염·대사질환·자가면역 등 다양한 질환에서 호중구의 기능이 어떻게 변화하는지를 지속적으로 규명하고 있습니다.' +
+      '<span class="block mt-2 text-[14.5px] text-ink-soft/70 italic">More recently, I have used single-cell RNA sequencing to continuously uncover how neutrophil function shifts across diverse diseases, including infection, metabolic disease, and autoimmunity.</span>',
+    '호중구 세포외 덫(NET) 형성, 호중구 유래 세포외소포(EV), 페롭토시스(ferroptosis)에 이르기까지 — 호중구가 질환마다 보이는 이질적인 반응을 하나의 축으로 꿰는 연구를 지향합니다.' +
+      '<span class="block mt-2 text-[14.5px] text-ink-soft/70 italic">From neutrophil extracellular traps (NETs) and neutrophil-derived extracellular vesicles (EVs) to ferroptosis, I aim to weave the heterogeneous responses of neutrophils across diseases into a single, coherent axis.</span>',
   ],
   aboutFacts: [
     { k: "전공",      v: "면역세포 중심 생리학 (Immune Cell Physiology)" },
-    { k: "핵심 주제", v: "호중구 생물학 · NETosis · 세포외소포(EV)" },
+    { k: "핵심 주제", v: "호중구 생물학 · NETs · 세포외소포(EV)" },
     { k: "실험 기법", v: "FACS Calibur · Western blot · qPCR · scRNA-seq" },
     { k: "연구 재료", v: "사람 말초혈액 유래 면역세포" },
     { k: "Email",     v: "__EMAIL__" },
@@ -75,7 +79,7 @@ const SITE = {
   researchCards: [
     { title: "호중구 NET 형성",
       desc:  "SARS-CoV-2 단백질, 당뇨 유래 훈련면역(trained immunity) 등 다양한 자극이 호중구 세포외 덫(NET) 형성을 어떻게 유도하는지 규명합니다.",
-      tag:   "NETosis · 감염 · 대사질환" },
+      tag:   "NETs · 감염 · 대사질환" },
     { title: "호중구 유래 세포외소포(EV)",
       desc:  "호중구·dHL-60 세포에서 유래한 세포외소포의 기능과 치료 전달체로서의 가능성, 그리고 TRAIL 매개 전염증성 아형을 연구합니다.",
       tag:   "EV · TRAIL · 치료 전달" },
@@ -139,10 +143,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* 내비게이션 (페이지 목록) */
   const NAV = [
-    { href: 'index.html',        page: 'home',         label: '소개' },
-    { href: 'research.html',     page: 'research',     label: '연구 주제' },
-    { href: 'publications.html', page: 'publications', label: '논문' },
-    { href: 'cv.html',           page: 'cv',           label: '이력 · 연락처' },
+    { href: 'index.html',        page: 'home',         label: 'ABOUT' },
+    { href: 'research.html',     page: 'research',     label: 'RESEARCH' },
+    { href: 'publications.html', page: 'publications', label: 'PUBLICATIONS' },
+    { href: 'cv.html',           page: 'cv',           label: 'CURRICULUM VITAE' },
   ];
   const active = document.body.getAttribute('data-page');
   const menu = NAV.map(n => {
