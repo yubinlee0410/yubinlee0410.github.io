@@ -2,8 +2,10 @@
    논문 목록 — 사이트가 이 파일을 읽어 논문 섹션을 그립니다.
 
    ✏️ 사람이 편집: title(제목), desc(설명)
-   🤖 매주 자동 갱신(GitHub Actions + OpenAlex): citations(인용수), 그리고
-      출판되면 venueName(저널)·doi·url이 자동으로 채워지고 venue가 "ink"로 바뀝니다.
+   🤖 매주 자동 갱신(GitHub Actions):
+        · citations(인용수) — OpenAlex 기준으로 갱신
+        · ORCID(0000-0002-0746-0419)로 새로 출판된 논문 자동 추가 (desc 는 비어 있으니 채워 넣으세요)
+        · 심사 중 논문이 출판되면 venueName·doi·url 자동 기입, venue → "ink"
 
    새 논문 추가(아직 출판 전): 아래 배열 맨 위에 이 형태로 추가하세요.
      {
