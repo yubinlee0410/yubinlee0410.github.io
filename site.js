@@ -44,11 +44,11 @@ const SITE = {
   eyebrow:   "Immune Cell Physiology · Neutrophil Research",
 
   /* ── 히어로(첫 화면) ── */
-  heroRole:  '사람 말초혈액에서 <b class="text-ink font-semibold">면역세포</b>를 분리하고, ' +
-             '<b class="text-ink font-semibold">단일세포 RNA 시퀀싱</b>으로 다양한 질환에서 ' +
-             '<b class="text-ink font-semibold">호중구(Neutrophil)</b>의 기능이 어떻게 변화하는지 규명하는 ' +
-             '<b class="text-ink font-semibold">면역세포 중심 생리학</b> 연구자입니다.' +
-             '<span class="block mt-3 pl-3.5 border-l-2 border-purple-2/40 text-[15px] text-ink-soft leading-relaxed">An immune cell&#8211;focused physiologist. I isolate immune cells from human peripheral blood and use single-cell RNA sequencing to uncover how neutrophil function changes across a range of diseases.</span>',
+  heroRole:  '선천성 면역세포인 <b class="text-ink font-semibold">호중구(Neutrophil)</b>를 중심으로 ' +
+             '면역세포의 생리를 실험으로 읽어내는 과학자입니다. ' +
+             '<b class="text-ink font-semibold">호중구 세포외 덫(NETs)</b>과 <b class="text-ink font-semibold">세포외소포(EVs)</b> 등 ' +
+             '호중구의 다양한 생리학적 기능을 연구하며, 질환에 따라 달라지는 반응과 기능적 이질성을 통합적으로 이해하고자 합니다.' +
+             '<span class="block mt-3 pl-3.5 border-l-2 border-purple-2/40 text-[15px] text-ink-soft leading-relaxed">A scientist reading the physiology of immune cells through experiments, with a focus on neutrophils&#8212;the key effector cells of innate immunity. I study diverse neutrophil functions, including NET formation and neutrophil-derived extracellular vesicles (EVs), to understand their functional heterogeneity across diseases.</span>',
   heroQuote: '“호중구가 감염과 염증에서<br>어떻게 반응하는지, 세포 하나하나의<br>언어로 읽어냅니다.”' +
              '<span class="block mt-3 pt-3 border-t border-line text-[13.5px] font-normal text-ink-soft leading-relaxed">&#8220;Reading, cell by cell, how neutrophils respond to infection and inflammation.&#8221;</span>',
   heroStats: [
