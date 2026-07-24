@@ -78,7 +78,7 @@ const SITE = {
     { k: "소속",      ke: "Affiliation", v: "경북대학교 심혈관연구소",            en: "Cardiovascular Research Institute,<br>Kyungpook National University" },
     { k: "전공",      ke: "Major",      v: "면역세포 중심 생리학",              en: "Immune Cell Physiology" },
     { k: "핵심 주제", ke: "Focus",      v: "호중구 생물학 · NETs · 세포외소포(EV)", en: "Neutrophil biology · NETs · EVs" },
-    { k: "실험 기법", ke: "Techniques", v: "FACS Calibur · Western blot · qPCR · scRNA-seq", en: "" },
+    { k: "실험 기법", ke: "Techniques", v: "Molecular Biology · Bioinformatics · Disease Modeling", en: "" },
     { k: "Email",     ke: "",           v: "__EMAIL__",                          en: "" },
   ],
 
