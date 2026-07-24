@@ -54,7 +54,7 @@ const SITE = {
   heroStats: [
     { num: "__PUBCOUNT__", label: "Publications" },
     { num: "호중구",        label: "Neutrophil focus" },
-    { num: "scRNA",        label: "-seq · FACS" },
+    { num: "NETs",         label: "& EVs" },
   ],
   heroCaption: '<b class="text-purple-ink">이유빈</b> · 면역세포 중심 생리학 전공 · 호중구 생물학 연구' +
                '<span class="block mt-1 text-ink-soft"><b class="text-purple-ink">Yu-Bin Lee</b> · Immune Cell Physiology · Neutrophil Biology</span>',
