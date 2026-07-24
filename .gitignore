@@ -4,3 +4,7 @@
 # Editor
 .vscode/
 *.swp
+
+# CV source materials (keep local, do not publish)
+CV_info.png
+이력.png
