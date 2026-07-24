@@ -12,8 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opt@1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="publications.js"></script>
-<script src="site.js"></script>
+<script>
+  /* publications.js·site.js 를 항상 최신본으로 로드 (브라우저 캐시로 인한 반영 지연 방지) */
+  (function () { var v = '?v=' + Date.now();
+    document.write('<script src="publications.js' + v + '"><\/script>');
+    document.write('<script src="site.js' + v + '"><\/script>');
+  })();
+</script>
 </head>
 
 <body data-page="publications" class="font-sans text-ink bg-white">

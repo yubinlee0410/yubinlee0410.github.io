@@ -117,7 +117,6 @@ const SITE = {
     { icon: "mail", label: "Email",    value: "__EMAIL__", href: "mailto:__EMAIL__" },
     { icon: "id",   label: "ORCID",    value: "0000-0002-0746-0419", href: "https://orcid.org/0000-0002-0746-0419" },
     { icon: "node", label: "전공",     value: "면역세포 중심 생리학 · 호중구 연구" },
-    { icon: "wave", label: "연구 재료", value: "사람 말초혈액 유래 면역세포" },
   ],
 };
 
@@ -125,7 +124,7 @@ const SITE = {
 /* =====================================================================
    조립(렌더) 코드 — 수정할 필요 없음
    ===================================================================== */
-document.addEventListener('DOMContentLoaded', function () {
+function renderSite() {
   const S = SITE;
   const esc = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   const email = S.email;
@@ -272,4 +271,11 @@ document.addEventListener('DOMContentLoaded', function () {
       ? '<a class="flex items-center gap-3.5 py-3 border-t border-line text-[14.5px]" href="'+esc(fill(r.href))+'">'+inner+'</a>'
       : '<div class="flex items-center gap-3.5 py-3 border-t border-line text-[14.5px]">'+inner+'</div>';
   }).join(''));
-});
+}
+
+/* 스크립트가 언제 로드되든(캐시 무효화 로딩 포함) 안전하게 실행 */
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', renderSite);
+} else {
+  renderSite();
+}
