@@ -62,10 +62,10 @@ const SITE = {
   /* ── 소개(About) ── */
   aboutParagraphs: [
     '<b class="text-ink">면역세포의 생리를 실험으로 읽어냅니다.</b> 저는 사람 말초혈액(peripheral blood)에서 면역세포를 분리하고, FACS Calibur·Western blot·qPCR 등 분자생물학 실험을 기반으로 자연 면역의 최전선인 <b class="text-ink">호중구(Neutrophil)</b>의 기능을 연구합니다.' +
-      '<span class="block mt-2.5 pl-3.5 border-l-2 border-purple-2/40 text-[14.5px] text-ink-soft leading-relaxed">I read the physiology of immune cells through experiments. I isolate immune cells from human peripheral blood and study the function of neutrophils&#8212;the front line of innate immunity&#8212;using molecular techniques such as FACS Calibur, Western blot, and qPCR.</span>',
     '최근에는 <b class="text-ink">단일세포 RNA 시퀀싱(single-cell RNA sequencing)</b>을 통해 감염·대사질환·자가면역 등 다양한 질환에서 호중구의 기능이 어떻게 변화하는지를 지속적으로 규명하고 있습니다.' +
+    '호중구 세포외 덫(NET) 형성, 호중구 유래 세포외소포(EV), 페롭토시스(ferroptosis)에 이르기까지 — 호중구가 질환마다 보이는 이질적인 반응을 하나의 축으로 꿰는 연구를 지향합니다.' +  
+      '<span class="block mt-2.5 pl-3.5 border-l-2 border-purple-2/40 text-[14.5px] text-ink-soft leading-relaxed">I read the physiology of immune cells through experiments. I isolate immune cells from human peripheral blood and study the function of neutrophils&#8212;the front line of innate immunity&#8212;using molecular techniques such as FACS Calibur, Western blot, and qPCR.</span>',
       '<span class="block mt-2.5 pl-3.5 border-l-2 border-purple-2/40 text-[14.5px] text-ink-soft leading-relaxed">More recently, I have used single-cell RNA sequencing to continuously uncover how neutrophil function shifts across diverse diseases, including infection, metabolic disease, and autoimmunity.</span>',
-    '호중구 세포외 덫(NET) 형성, 호중구 유래 세포외소포(EV), 페롭토시스(ferroptosis)에 이르기까지 — 호중구가 질환마다 보이는 이질적인 반응을 하나의 축으로 꿰는 연구를 지향합니다.' +
       '<span class="block mt-2.5 pl-3.5 border-l-2 border-purple-2/40 text-[14.5px] text-ink-soft leading-relaxed">From neutrophil extracellular traps (NETs) and neutrophil-derived extracellular vesicles (EVs) to ferroptosis, I aim to weave the heterogeneous responses of neutrophils across diseases into a single, coherent axis.</span>',
   ],
   aboutFacts: [
