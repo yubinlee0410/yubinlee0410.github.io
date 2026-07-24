@@ -105,6 +105,7 @@ const SITE = {
   contactSub:   "공동연구, 세미나, 문의를 환영합니다.",
   contactRows: [
     { icon: "mail", label: "Email",    value: "__EMAIL__", href: "mailto:__EMAIL__" },
+    { icon: "id",   label: "ORCID",    value: "0000-0002-0746-0419", href: "https://orcid.org/0000-0002-0746-0419" },
     { icon: "node", label: "전공",     value: "면역세포 중심 생리학 · 호중구 연구" },
     { icon: "wave", label: "연구 재료", value: "사람 말초혈액 유래 면역세포" },
   ],
@@ -133,6 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
     mail: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg>',
     node: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="6" r="2.4"/><circle cx="6" cy="17" r="2.4"/><circle cx="18" cy="17" r="2.4"/><path d="M12 8.4V13m0 0l-4.2 2.2M12 13l4.2 2.2"/></svg>',
     wave: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12a8 8 0 0116 0"/><circle cx="12" cy="12" r="2.2"/><path d="M12 4v2M4 12H2M22 12h-2"/></svg>',
+    id:   '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 10.5v5"/><circle cx="12" cy="8" r="0.8" fill="currentColor" stroke="none"/></svg>',
   };
 
   /* 내비게이션 (페이지 목록) */
@@ -224,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
       : '<span class="'+venueBase+'">'+esc(p.venueName)+'</span>';
     return '<div class="group grid md:grid-cols-[70px_1fr_auto] gap-2 md:gap-6 py-6 border-b border-line md:items-baseline">'+
         '<div class="font-serif italic text-[20px] text-purple">'+esc(p.year)+'</div>'+
-        '<div>'+title+'<div class="text-[13.5px] text-ink-soft mt-1">'+esc(p.desc)+'</div>'+cite+'</div>'+
+        '<div>'+title+(p.desc ? '<div class="text-[13.5px] text-ink-soft mt-1">'+esc(p.desc)+'</div>' : '')+cite+'</div>'+
         venue+
       '</div>';
   }).join(''));
