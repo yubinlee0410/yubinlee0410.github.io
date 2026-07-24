@@ -73,7 +73,7 @@ const SITE = {
     'From neutrophil extracellular traps (NETs) and neutrophil-derived extracellular vesicles (EVs) to ferroptosis, I aim to weave the heterogeneous responses of neutrophils across diseases into a single, coherent axis.',
   ],
   aboutFacts: [
-    { k: "소속",      ke: "Affiliation", v: "경북대학교 심혈관연구소",            en: "Cardiovascular Research Institute, Kyungpook National University" },
+    { k: "소속",      ke: "Affiliation", v: "경북대학교 심혈관연구소",            en: "Cardiovascular Research Institute,<br>Kyungpook National University" },
     { k: "전공",      ke: "Major",      v: "면역세포 중심 생리학",              en: "Immune Cell Physiology" },
     { k: "핵심 주제", ke: "Focus",      v: "호중구 생물학 · NETs · 세포외소포(EV)", en: "Neutrophil biology · NETs · EVs" },
     { k: "실험 기법", ke: "Techniques", v: "FACS Calibur · Western blot · qPCR · scRNA-seq", en: "" },
