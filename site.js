@@ -63,14 +63,16 @@ const SITE = {
        aboutParagraphs = 한글 문단(먼저 표시), aboutParagraphsEn = 영어 문단(그 아래 묶어서 표시)
        두 배열의 순서가 서로 대응됩니다. */
   aboutParagraphs: [
-    '<b class="text-ink">면역세포의 생리를 실험으로 읽어냅니다.</b> 저는 사람 말초혈액(peripheral blood)에서 면역세포를 분리하고, FACS Calibur·Western blot·qPCR 등 분자생물학 실험을 기반으로 자연 면역의 최전선인 <b class="text-ink">호중구(Neutrophil)</b>의 기능을 연구합니다.',
-    '최근에는 <b class="text-ink">단일세포 RNA 시퀀싱(single-cell RNA sequencing)</b>을 통해 감염·대사질환·자가면역 등 다양한 질환에서 호중구의 기능이 어떻게 변화하는지를 지속적으로 규명하고 있습니다.',
-    '호중구 세포외 덫(NET) 형성, 호중구 유래 세포외소포(EV), 페롭토시스(ferroptosis)에 이르기까지 — 호중구가 질환마다 보이는 이질적인 반응을 하나의 축으로 꿰는 연구를 지향합니다.',
+    '선천성 면역세포인 <b class="text-ink">호중구(Neutrophil)</b>를 중심으로 면역세포의 생리를 실험으로 읽어내는 과학자입니다.',
+    '사람 말초혈액(peripheral blood)에서 면역세포를 분리하고, FACS Calibur, Western blot, qPCR 등 분자생물학 기반의 실험을 통해 세포의 활성과 기능 조절 기전을 연구합니다.',
+    '특히 호중구 세포외 덫(NETs) 형성과 호중구 유래 세포외소포(Extracellular Vesicles, EVs)를 비롯한 호중구의 다양한 생리학적 기능을 연구하며, 질환에 따라 달라지는 호중구의 반응과 기능적 이질성을 통합적으로 이해하고자 합니다.',
+    '궁극적으로는 호중구의 생리학적 특성과 기능 조절 기전을 규명하여 감염, 염증성 질환, 대사질환 등 다양한 병태에서 선천면역의 역할을 밝히는 연구를 수행하고 있습니다.',
   ],
   aboutParagraphsEn: [
-    'I read the physiology of immune cells through experiments. I isolate immune cells from human peripheral blood and study the function of neutrophils&#8212;the front line of innate immunity&#8212;using molecular techniques such as FACS Calibur, Western blot, and qPCR.',
-    'More recently, I have used single-cell RNA sequencing to continuously uncover how neutrophil function shifts across diverse diseases, including infection, metabolic disease, and autoimmunity.',
-    'From neutrophil extracellular traps (NETs) and neutrophil-derived extracellular vesicles (EVs) to ferroptosis, I aim to weave the heterogeneous responses of neutrophils across diseases into a single, coherent axis.',
+    'I am a scientist investigating the physiology of immune cells, with a particular focus on neutrophils, the key effector cells of the innate immune system.',
+    'My research involves isolating immune cells from human peripheral blood and employing molecular and cellular biology techniques, including flow cytometry (FACSCalibur), Western blotting, and quantitative PCR (qPCR), to elucidate the mechanisms regulating immune cell activation and function.',
+    'I am particularly interested in diverse neutrophil functions, including neutrophil extracellular trap (NET) formation and neutrophil-derived extracellular vesicles (EVs). My work aims to integrate the functional heterogeneity of neutrophils across different disease contexts and uncover the biological principles that govern their diverse responses.',
+    'Ultimately, my research seeks to elucidate the physiological characteristics and regulatory mechanisms of neutrophils, providing new insights into the roles of innate immunity in infectious diseases, inflammatory disorders, and metabolic diseases.',
   ],
   aboutFacts: [
     { k: "소속",      ke: "Affiliation", v: "경북대학교 심혈관연구소",            en: "Cardiovascular Research Institute,<br>Kyungpook National University" },
