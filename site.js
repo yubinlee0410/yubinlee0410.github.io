@@ -37,7 +37,6 @@ window.tailwind.config = {
 const SITE = {
 
   /* ── 기본 정보 ── */
-  name:      "이 유 빈",
   nameEn:    "Yu-Bin Lee",
   email:     "leeyoubin0410@gmail.com",
   brandSub:  "Neutrophil Biology · Immune Cell Physiology",
