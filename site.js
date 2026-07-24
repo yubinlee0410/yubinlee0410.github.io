@@ -50,9 +50,9 @@ const SITE = {
              '<b class="text-ink font-semibold">면역세포 중심 생리학</b> 연구자입니다.',
   heroQuote: '“호중구가 감염과 염증에서<br>어떻게 반응하는지, 세포 하나하나의<br>언어로 읽어냅니다.”',
   heroStats: [
-    { num: "6",     label: "Publications" },
-    { num: "호중구", label: "Neutrophil focus" },
-    { num: "scRNA", label: "-seq · FACS" },
+    { num: "__PUBCOUNT__", label: "Publications" },
+    { num: "호중구",        label: "Neutrophil focus" },
+    { num: "scRNA",        label: "-seq · FACS" },
   ],
   heroCaption: '<b class="text-purple-ink">이유빈</b> · 면역세포 중심 생리학 전공 · 호중구 생물학 연구',
 
@@ -84,41 +84,8 @@ const SITE = {
       tag:   "scRNA-seq · ferroptosis" },
   ],
 
-  /* ── 논문 (최신순으로 위에서부터) ──
-       venue: "purple"(보라, 강조) 또는 "ink"(검정, 기본)
-       doi 가 없으면 "" 로 두면 링크 없이 표시됩니다 */
-  publications: [
-    { year: "2026",
-      title: "Neutrophils Promote Metabolic Dysfunction-Associated Steatotic Liver Disease through Extracellular Vesicle-mediated Lipid Transfer",
-      desc:  "호중구 유래 세포외소포(EV)가 간세포로 지질을 전달하여 대사질환 관련 지방간(MASLD)을 촉진함을 규명",
-      venueName: "under revision", venue: "purple",
-      doi: "" },
-    { year: "2025",
-      title: "Ferroptosis in neutrophils",
-      desc:  "호중구에서 일어나는 페롭토시스(ferroptosis)의 기전과 면역학적 의미를 정리한 연구",
-      venueName: "J. Leukocyte Biology", venue: "ink",
-      doi: "10.1093/jleuko/qiaf039" },
-    { year: "2024",
-      title: "Diabetes primes neutrophils for neutrophil extracellular trap formation through trained immunity",
-      desc:  "당뇨가 훈련면역을 통해 호중구의 NET 형성을 촉진하는 기전 규명",
-      venueName: "Research", venue: "ink",
-      doi: "10.34133/research.0365" },
-    { year: "2021",
-      title: "Nucleocapsid and spike proteins of SARS-CoV-2 drive neutrophil extracellular trap formation",
-      desc:  "SARS-CoV-2의 뉴클레오캡시드·스파이크 단백질이 호중구 NET 형성을 유도함을 규명",
-      venueName: "Immune Network", venue: "ink",
-      doi: "10.4110/in.2021.21.e16" },
-    { year: "2021",
-      title: "Extracellular vesicles from dHL-60 cells as delivery vehicles for diverse therapeutics",
-      desc:  "dHL-60 세포 유래 세포외소포를 다양한 치료제의 전달체로 활용하는 연구",
-      venueName: "Scientific Reports", venue: "ink",
-      doi: "10.1038/s41598-021-87891-8" },
-    { year: "2021",
-      title: "Neutrophil-derived TRAIL is a proinflammatory subtype of neutrophil-derived extracellular vesicles",
-      desc:  "호중구 유래 TRAIL이 전염증성 세포외소포 아형임을 규명",
-      venueName: "Theranostics", venue: "ink",
-      doi: "10.7150/thno.51756" },
-  ],
+  /* ── 논문 ──
+       ▶ 논문 목록은 publications.js 파일에서 관리합니다 (인용수·저널·DOI 자동 갱신). */
 
   /* ── 이력 타임라인 (위에서부터 표시 = 최신순) ──
        ▶ 경력이 생기면 { period, title, desc } 한 줄을 맨 위에 복사해 추가하세요. */
@@ -211,9 +178,12 @@ document.addEventListener('DOMContentLoaded', function () {
   set('heroRole', S.heroRole);
   set('heroQuote', S.heroQuote);
   set('heroCaption', S.heroCaption);
-  set('heroStats', S.heroStats.map(s =>
-    '<div class="flex flex-col"><b class="text-[20px] font-bold text-purple">'+esc(s.num)+'</b><span class="text-[11.5px] text-ink-soft">'+esc(s.label)+'</span></div>'
-  ).join(''));
+  const PUB = (window.PUBLICATIONS || []);
+  const pubCount = PUB.length;
+  set('heroStats', S.heroStats.map(s => {
+    const num = String(s.num).split('__PUBCOUNT__').join(pubCount);
+    return '<div class="flex flex-col"><b class="text-[20px] font-bold text-purple">'+esc(num)+'</b><span class="text-[11.5px] text-ink-soft">'+esc(s.label)+'</span></div>';
+  }).join(''));
 
   /* 소개 (index.html) */
   set('aboutParagraphs', S.aboutParagraphs.map(p => '<p>'+p+'</p>').join(''));
@@ -235,20 +205,26 @@ document.addEventListener('DOMContentLoaded', function () {
     '</div>'
   ).join(''));
 
-  /* 논문 (publications.html) */
-  set('publications', S.publications.map(p => {
+  /* 논문 (publications.html) — 목록·인용수·저널·DOI는 publications.js에서 옴 */
+  set('publications', PUB.map(p => {
     const badge = p.venue === 'purple' ? 'bg-purple' : 'bg-ink';
-    const url = p.doi ? 'https://doi.org/'+esc(p.doi) : '';
-    const title = url
-      ? '<a href="'+url+'" target="_blank" rel="noopener" class="font-semibold tracking-tight group-hover:text-purple transition-colors">'+esc(p.title)+'</a>'
+    const link = p.url || (p.doi ? 'https://doi.org/'+p.doi : '');
+    const linkEsc = esc(link);
+    const title = link
+      ? '<a href="'+linkEsc+'" target="_blank" rel="noopener" class="font-semibold tracking-tight group-hover:text-purple transition-colors">'+esc(p.title)+'</a>'
       : '<span class="font-semibold tracking-tight">'+esc(p.title)+'</span>';
+    const cite = (typeof p.citations === 'number')
+      ? '<div class="text-[12.5px] text-ink-soft mt-1.5">인용 <b class="text-purple">'+esc(p.citations)+'</b>회 · <span>OpenAlex</span></div>'
+      : (p.venue === 'purple'
+          ? '<div class="text-[12.5px] text-ink-soft mt-1.5">출판 심사 중 · 게재되면 자동 업데이트</div>'
+          : '');
     const venueBase = 'text-[12px] font-semibold text-white '+badge+' px-3 py-1.5 rounded-md whitespace-nowrap self-center justify-self-start';
-    const venue = url
-      ? '<a href="'+url+'" target="_blank" rel="noopener" title="논문 보기" class="'+venueBase+' hover:opacity-80 transition-opacity">'+esc(p.venueName)+'</a>'
+    const venue = link
+      ? '<a href="'+linkEsc+'" target="_blank" rel="noopener" title="저널에서 논문 보기" class="'+venueBase+' hover:opacity-80 transition-opacity">'+esc(p.venueName)+'</a>'
       : '<span class="'+venueBase+'">'+esc(p.venueName)+'</span>';
     return '<div class="group grid md:grid-cols-[70px_1fr_auto] gap-2 md:gap-6 py-6 border-b border-line md:items-baseline">'+
         '<div class="font-serif italic text-[20px] text-purple">'+esc(p.year)+'</div>'+
-        '<div>'+title+'<div class="text-[13.5px] text-ink-soft mt-1">'+esc(p.desc)+'</div></div>'+
+        '<div>'+title+'<div class="text-[13.5px] text-ink-soft mt-1">'+esc(p.desc)+'</div>'+cite+'</div>'+
         venue+
       '</div>';
   }).join(''));
