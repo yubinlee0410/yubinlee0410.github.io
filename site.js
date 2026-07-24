@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const S = SITE;
   const esc = (s) => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   const email = S.email;
-  const namePlain = S.name.split(' ').join('');
+  const namePlain = String(S.name || S.nameEn || '').split(' ').join('');
   const fill = (v) => String(v).split('__EMAIL__').join(email);
   const set = (key, html) => {
     document.querySelectorAll('[data-bind="'+key+'"]').forEach(el => { el.innerHTML = html; });
