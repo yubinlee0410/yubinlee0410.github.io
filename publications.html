@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>논문 — 이유빈 (Yu-Bin Lee)</title>
+<meta name="description" content="호중구(Neutrophil)를 중심으로 한 주요 논문 목록. 최신순 정렬, 저널 배지를 누르면 DOI 링크로 연결됩니다.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opt@1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="site.js"></script>
+</head>
+
+<body data-page="publications" class="font-sans text-ink bg-white">
+
+<div data-bind="site-nav"></div>
+
+<main class="max-w-content mx-auto px-6 md:px-8 py-16 md:py-24">
+  <div class="mb-11">
+    <div class="text-[13px] font-bold tracking-[.12em] uppercase text-purple">Publications</div>
+    <h1 class="text-[30px] md:text-[34px] font-bold tracking-[-.02em] mt-2">논문</h1>
+    <p class="text-ink-soft mt-2.5 max-w-[52em]">호중구를 중심으로 한 주요 논문입니다. 최신순으로 정렬했으며, 저널 배지를 누르면 논문(DOI) 링크가 열립니다.</p>
+  </div>
+  <div class="flex flex-col" data-bind="publications"></div>
+
+  <div class="mt-14 flex flex-wrap gap-3.5">
+    <a class="inline-flex items-center gap-2 text-[14.5px] font-semibold px-5 py-3 rounded-[11px] bg-purple text-white hover:bg-purple-ink hover:-translate-y-px transition" href="cv.html">이력 · 연락처 →</a>
+    <a class="inline-flex items-center gap-2 text-[14.5px] font-semibold px-5 py-3 rounded-[11px] border border-line text-ink hover:border-purple-2 hover:text-purple transition" href="research.html">연구 주제 →</a>
+  </div>
+</main>
+
+<div data-bind="site-footer"></div>
+
+</body>
+</html>
