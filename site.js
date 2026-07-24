@@ -54,7 +54,7 @@ const SITE = {
   heroStats: [
     { num: "__PUBCOUNT__", label: "Publications" },
     { num: "호중구",        label: "Neutrophil focus" },
-    { num: "NETs",         label: "& EVs" },
+    { num: "생리학",         label: "Immune Cell Physiology" },
   ],
   heroCaption: '<b class="text-purple-ink">이유빈</b> · 면역세포 중심 생리학 전공 · 호중구 생물학 연구' +
                '<span class="block mt-1 text-ink-soft"><b class="text-purple-ink">Yu-Bin Lee</b> · Immune Cell Physiology · Neutrophil Biology</span>',
@@ -66,7 +66,7 @@ const SITE = {
     '선천성 면역세포인 <b class="text-ink">호중구(Neutrophil)</b>를 중심으로 면역세포의 생리를 실험으로 읽어내는 과학자입니다.',
     '사람 말초혈액(peripheral blood)에서 면역세포를 분리하고, FACS Calibur, Western blot, qPCR 등 분자생물학 기반의 실험을 통해 세포의 활성과 기능 조절 기전을 연구합니다.',
     '특히 호중구 세포외 덫(NETs) 형성과 호중구 유래 세포외소포(Extracellular Vesicles, EVs)를 비롯한 호중구의 다양한 생리학적 기능을 연구하며, 질환에 따라 달라지는 호중구의 반응과 기능적 이질성을 통합적으로 이해하고자 합니다.',
-    '궁극적으로는 호중구의 생리학적 특성과 기능 조절 기전을 규명하여 감염, 염증성 질환, 대사질환 등 다양한 병태에서 선천면역의 역할을 밝히는 연구를 수행하고 있습니다.',
+    '궁극적으로는 호중구의 생리학적 특성과 기능 조절 기전을 규명하여 감염, 염증성 질환, 대사질환 등 다양한 병태생리에서 호중구의 역할을 밝히는 연구를 수행하고자 합니다.',
   ],
   aboutParagraphsEn: [
     'I am a scientist investigating the physiology of immune cells, with a particular focus on neutrophils, the key effector cells of the innate immune system.',
@@ -83,15 +83,15 @@ const SITE = {
   ],
 
   /* ── 연구 주제(3칸 카드) ── */
-  researchSub: "호중구(Neutrophil)를 중심에 두고, 세 가지 축으로 면역세포의 생리를 탐구합니다.",
+  researchSub: "호중구(Neutrophil)를 중심에 두고, 면역세포의 생리를 탐구합니다.",
   researchCards: [
     { title: "호중구 NET 형성",
       desc:  "SARS-CoV-2 단백질, 당뇨 유래 훈련면역(trained immunity) 등 다양한 자극이 호중구 세포외 덫(NET) 형성을 어떻게 유도하는지 규명합니다.",
       tag:   "NETs · 감염 · 대사질환" },
-    { title: "호중구 유래 세포외소포(EV)",
+    { title: "호중구 유래 세포외소포 (EVs)",
       desc:  "호중구·dHL-60 세포에서 유래한 세포외소포의 기능과 치료 전달체로서의 가능성, 그리고 TRAIL 매개 전염증성 아형을 연구합니다.",
       tag:   "EV · TRAIL · 치료 전달" },
-    { title: "단일세포 전사체 · 질환별 호중구",
+    { title: "단일세포 전사체 분석을 통한 질환별 호중구 연구",
       desc:  "단일세포 RNA 시퀀싱으로 여러 질환에서의 호중구 이질성과 기능 변화, 그리고 페롭토시스(ferroptosis)와 같은 세포 죽음 프로그램을 해석합니다.",
       tag:   "scRNA-seq · ferroptosis" },
   ],
@@ -113,7 +113,7 @@ const SITE = {
   ],
 
   /* ── 연락처 카드 ── */
-  contactTitle: "함께 연구해요",
+  contactTitle: "Welcome to contact me",
   contactSub:   "공동연구, 세미나, 문의를 환영합니다.",
   contactRows: [
     { icon: "mail", label: "Email",    value: "__EMAIL__", href: "mailto:__EMAIL__" },
