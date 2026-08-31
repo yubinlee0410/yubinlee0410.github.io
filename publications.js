@@ -85,6 +85,6 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.7150/thno.51756",
     "url": "https://doi.org/10.7150/thno.51756",
-    "citations": 76
+    "citations": 77
   }
 ];
