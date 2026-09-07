@@ -41,7 +41,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.1093/jleuko/qiaf039",
     "url": "https://doi.org/10.1093/jleuko/qiaf039",
-    "citations": 19
+    "citations": 20
   },
   {
     "id": "diabetes-net-trained-immunity-2024",
