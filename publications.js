@@ -26,11 +26,22 @@ window.PUBLICATIONS = [
     "year": "2026",
     "title": "Neutrophils Promote Metabolic Dysfunction-Associated Steatotic Liver Disease through Extracellular Vesicle-mediated Lipid Transfer",
     "desc": "호중구 유래 세포외소포(EV)가 간세포로 지질을 전달하여 대사질환 관련 지방간(MASLD)을 촉진함을 규명",
-    "venueName": "under revision",
-    "venue": "purple",
-    "doi": "",
-    "url": "",
-    "citations": null
+    "venueName": "Journal of Extracellular Vesicles",
+    "venue": "ink",
+    "doi": "10.1002/jev2.70350",
+    "url": "https://doi.org/10.1002/jev2.70350",
+    "citations": 0
+  },
+  {
+    "id": "metabolite-mediated-crosstalk-between-neutrophil-2026",
+    "year": "2026",
+    "title": "Metabolite-Mediated Crosstalk Between Neutrophils, Commensal Bacteria, and Dendritic Cells Is Associated with Intestinal Immune Responses",
+    "desc": "",
+    "venueName": "Journal of Leukocyte Biology",
+    "venue": "ink",
+    "doi": "10.1093/jleuko/qiag123",
+    "url": "https://doi.org/10.1093/jleuko/qiag123",
+    "citations": 0
   },
   {
     "id": "ferroptosis-in-neutrophils-2025",
@@ -44,6 +55,17 @@ window.PUBLICATIONS = [
     "citations": 21
   },
   {
+    "id": "the-postbiotic-lactobacillus-kunkeei-nchbl-003-a-2025",
+    "year": "2025",
+    "title": "The Postbiotic Lactobacillus Kunkeei Nchbl-003 Attenuates Mycobacterium Abscessus-Induced Pulmonary Inflammation by Modulating Il-1β Production",
+    "desc": "",
+    "venueName": "SSRN Electronic Journal",
+    "venue": "ink",
+    "doi": "10.2139/ssrn.5318481",
+    "url": "https://doi.org/10.2139/ssrn.5318481",
+    "citations": 0
+  },
+  {
     "id": "diabetes-net-trained-immunity-2024",
     "year": "2024",
     "title": "Diabetes primes neutrophils for neutrophil extracellular trap formation through trained immunity",
@@ -52,7 +74,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.34133/research.0365",
     "url": "https://doi.org/10.34133/research.0365",
-    "citations": 44
+    "citations": 46
   },
   {
     "id": "sars-cov-2-net-2021",
@@ -74,7 +96,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.1038/s41598-021-87891-8",
     "url": "https://doi.org/10.1038/s41598-021-87891-8",
-    "citations": 16
+    "citations": 17
   },
   {
     "id": "neutrophil-trail-ev-2021",
@@ -86,5 +108,16 @@ window.PUBLICATIONS = [
     "doi": "10.7150/thno.51756",
     "url": "https://doi.org/10.7150/thno.51756",
     "citations": 77
+  },
+  {
+    "id": "neutrophil-derived-extracellular-vesicles-proinf-2020",
+    "year": "2020",
+    "title": "Neutrophil-Derived Extracellular Vesicles: Proinflammatory Trails and Anti-Inflammatory Microvesicles",
+    "desc": "",
+    "venueName": "SSRN Electronic Journal",
+    "venue": "ink",
+    "doi": "10.2139/ssrn.3571290",
+    "url": "https://doi.org/10.2139/ssrn.3571290",
+    "citations": 0
   }
 ];
