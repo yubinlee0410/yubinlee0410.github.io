@@ -52,7 +52,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.1093/jleuko/qiaf039",
     "url": "https://doi.org/10.1093/jleuko/qiaf039",
-    "citations": 21
+    "citations": 22
   },
   {
     "id": "the-postbiotic-lactobacillus-kunkeei-nchbl-003-a-2025",
@@ -62,7 +62,7 @@ window.PUBLICATIONS = [
     "venueName": "SSRN Electronic Journal",
     "venue": "ink",
     "doi": "10.2139/ssrn.5318481",
-    "url": "https://doi.org/10.2139/ssrn.5318481",
+    "url": "https://doi.org/10.1016/j.micpath.2026.108310",
     "citations": 0
   },
   {
@@ -74,7 +74,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.34133/research.0365",
     "url": "https://doi.org/10.34133/research.0365",
-    "citations": 44
+    "citations": 45
   },
   {
     "id": "sars-cov-2-net-2021",
@@ -85,7 +85,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.4110/in.2021.21.e16",
     "url": "https://doi.org/10.4110/in.2021.21.e16",
-    "citations": 39
+    "citations": 38
   },
   {
     "id": "dhl60-ev-delivery-2021",
