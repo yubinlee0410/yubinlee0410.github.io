@@ -52,7 +52,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.1093/jleuko/qiaf039",
     "url": "https://doi.org/10.1093/jleuko/qiaf039",
-    "citations": 22
+    "citations": 24
   },
   {
     "id": "the-postbiotic-lactobacillus-kunkeei-nchbl-003-a-2025",
@@ -74,7 +74,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.34133/research.0365",
     "url": "https://doi.org/10.34133/research.0365",
-    "citations": 45
+    "citations": 47
   },
   {
     "id": "sars-cov-2-net-2021",
