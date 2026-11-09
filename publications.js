@@ -74,7 +74,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.34133/research.0365",
     "url": "https://doi.org/10.34133/research.0365",
-    "citations": 47
+    "citations": 48
   },
   {
     "id": "sars-cov-2-net-2021",
@@ -85,7 +85,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.4110/in.2021.21.e16",
     "url": "https://doi.org/10.4110/in.2021.21.e16",
-    "citations": 38
+    "citations": 35
   },
   {
     "id": "dhl60-ev-delivery-2021",
@@ -96,7 +96,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.1038/s41598-021-87891-8",
     "url": "https://doi.org/10.1038/s41598-021-87891-8",
-    "citations": 17
+    "citations": 16
   },
   {
     "id": "neutrophil-trail-ev-2021",
@@ -107,7 +107,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.7150/thno.51756",
     "url": "https://doi.org/10.7150/thno.51756",
-    "citations": 77
+    "citations": 78
   },
   {
     "id": "neutrophil-derived-extracellular-vesicles-proinf-2020",
@@ -118,6 +118,6 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.2139/ssrn.3571290",
     "url": "https://doi.org/10.2139/ssrn.3571290",
-    "citations": 0
+    "citations": 1
   }
 ];
