@@ -52,7 +52,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.1093/jleuko/qiaf039",
     "url": "https://doi.org/10.1093/jleuko/qiaf039",
-    "citations": 24
+    "citations": 28
   },
   {
     "id": "the-postbiotic-lactobacillus-kunkeei-nchbl-003-a-2025",
@@ -74,7 +74,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.34133/research.0365",
     "url": "https://doi.org/10.34133/research.0365",
-    "citations": 48
+    "citations": 54
   },
   {
     "id": "sars-cov-2-net-2021",
@@ -85,7 +85,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.4110/in.2021.21.e16",
     "url": "https://doi.org/10.4110/in.2021.21.e16",
-    "citations": 35
+    "citations": 36
   },
   {
     "id": "dhl60-ev-delivery-2021",
@@ -107,7 +107,7 @@ window.PUBLICATIONS = [
     "venue": "ink",
     "doi": "10.7150/thno.51756",
     "url": "https://doi.org/10.7150/thno.51756",
-    "citations": 78
+    "citations": 83
   },
   {
     "id": "neutrophil-derived-extracellular-vesicles-proinf-2020",
